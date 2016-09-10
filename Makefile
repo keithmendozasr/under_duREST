@@ -1,7 +1,7 @@
 .PHONY: all debug test
 
-export CXX=g++ --version
-export CXXFLAGS=-Wall -Werror -pedantic -std=c++14
+export CXX=g++
+export CXXFLAGS=-Wall -Werror -pedantic -std=c++11
 
 all:
 	make -C src all

@@ -1,6 +1,6 @@
 .PHONY: all
 
-CXXFLAGS+=-std=c++11 -I../include
+CXXFLAGS+=-I../include
 LIBS=-lproxygenhttpserver -lproxygenlib -lfolly -lwangle -lgflags -lglog -llog4cpp -ljsoncpp
 
 OBJS=under_durest.o
