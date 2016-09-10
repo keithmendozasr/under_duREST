@@ -3,6 +3,7 @@
 *.lo
 *.o
 *.obj
+*.d
 
 # Precompiled Headers
 *.gch
@@ -24,6 +25,8 @@
 *.lib
 
 # Executables
-*.exe
-*.out
-*.app
+under_durest
+core
+
+# Temp files
+*.sw*
