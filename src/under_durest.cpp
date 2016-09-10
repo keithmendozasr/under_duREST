@@ -56,9 +56,8 @@ CmdLines parseArgs(int argc, char **argv)
 int main(int argc, char **argv)
 {
     auto cmds = parseArgs(argc, argv);
-    cout << "Values in cmds:\n";
-    for(const auto &i : cmds)
-        cout << i.first << ": " << i.second << "\n";
+
+    // Check all options are there
     {
         string expectedOptions[] = {
             "config",
@@ -72,6 +71,7 @@ int main(int argc, char **argv)
             }
             catch(out_of_range &e)
             {
+                cerr << "\"" << i << "\" option not provided\n";
                 usage(argv[0]);
                 exit(EXIT_FAILURE);
             }
